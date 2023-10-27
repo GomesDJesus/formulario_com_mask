@@ -34,7 +34,7 @@ $(document).ready(function(){
             form.submit(); 
         }else{
            
-             alert('primeiro nome deve conter mais que 1 caractere')
+             alert('primeiro nome deve conter mais que 1 caractere e possuir sobrenome valido')
         }
         
         },
