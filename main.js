@@ -29,11 +29,12 @@ $(document).ready(function(){
             
         let firstName = $('#nome').val().split(' ');
 
-        if(firstName[0].length === 1 || firstName[1].trim() === ''){
-            alert('primeiro nome deve conter mais que 1 caractere ou sobrenome esta vazio')
-        }else{
+        if( firstName[0].length > 1 && firstName.length === 2 && firstName[1].trim() !== ''){
             alert(`Obrigado Sr(a) ${firstName[0]} por entrar em contato.`)
-             form.submit(); 
+            form.submit(); 
+        }else{
+           
+             alert('primeiro nome deve conter mais que 1 caractere')
         }
         
         },
